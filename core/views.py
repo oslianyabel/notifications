@@ -10,7 +10,7 @@ def send_notification(request):
         user_whatsapp_number = request.POST['user_number']
 
         message = client.messages.create(
-            from_='whatsapp:+34930039876',
+            from_='whatsapp:+34930341330',
             body = 'Hola, cualquier duda sobre tu compra estamos para atenderte. No dude en consultarnos.',
             to='whatsapp:+{}'.format(user_whatsapp_number)
         )
